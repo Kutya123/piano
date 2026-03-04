@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    font-family: Arial, sans-serif;
+}
+
+.pad {
+    position: relative;
+    display: flex;
+}
+
+.key {
+    position: relative;
+    cursor: pointer;
+    transition: 0.08s;
+}
+
+/* Белые клавиши */
+.white {
+    width: 70px;
+    height: 260px;
+    background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
+    border: 1px solid #bbb;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 5px 0 #999;
+    z-index: 1;
+}
+
+.white:active {
+    transform: translateY(5px);
+    box-shadow: 0 2px 0 #666;
+    background: #ddd;
+}
+
+/* Черные клавиши */
+.black {
+    width: 45px;
+    height: 160px;
+    background: linear-gradient(to bottom, #000 0%, #333 100%);
+    position: absolute;
+    top: 0;
+    margin-left: -22px;
+    border-radius: 0 0 6px 6px;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+}
+
+.black:active {
+    transform: translateY(3px);
+    background: #111;
+}
