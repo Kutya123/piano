@@ -54,4 +54,4 @@ Web Audio через Audio()
 
 ![Desktop](./piano.png)
 
-[Demo](https://meek-griffin-e3994b.netlify.app/)
+[Посмотреть DEMO версию](https://meek-griffin-e3994b.netlify.app/)
